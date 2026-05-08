@@ -11,4 +11,4 @@ jobs:
 
     steps:
       - name: simple-web
-        run: echo "This is the first CICD step"
+        run: echo "This is the first CICD step "
