@@ -10,9 +10,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: simple-web
+      - name: file-check
         run: pwd
           ls -al
-          echo "This is the first CICD step " >> a.txt
+      - name: file-create
+        run: echo "This is the second CICD step " >> a.txt
           ls -al
           cat a.txt
