@@ -11,4 +11,8 @@ jobs:
 
     steps:
       - name: simple-web
-        run: echo "This is the first CICD step "
+        run: pwd
+          ls -al
+          echo "This is the first CICD step " >> a.txt
+          ls -al
+          cat a.txt
